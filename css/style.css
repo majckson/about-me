@@ -1,0 +1,19 @@
+body {
+    background-color: aquamarine;
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+ul {
+    list-style: disc;
+   list-style-position: inside;
+   /*margin: 50px;
+}
+
+
+/*ol { 
+    list-style: lower-roman;
+
+}
