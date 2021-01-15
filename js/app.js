@@ -1,19 +1,10 @@
 'use strict';
 
-console.log('Hello World');
-
-// linter test (need to get fixed)
-var banana = 42;
-// if(banana){
-//   console.log(banana);
-// }
-
-// console.log(banana);
-
 //get user name and offer greeting
 var userName = prompt('Hello, what\'s your name?');
-alert('Hi ' + userName + ', nice to meet you!');
-console.log(userName);
+//alert('Hi ' + userName + ', nice to meet you!');
+alert(`Hi ${userName}, nice to meet you`);
+//console.log(userName);
 
 // 5 question. they MUSt accept yes or no OR y or n IN ANY CASE
 // examples;  YES, yes, YEs, yeS, Y ,y....
@@ -24,7 +15,7 @@ if (answerOne === 'yes' || answerOne === 'y') {
   //console.log('Perfect! Let\'s get started.');
   alert('Perfect! Let\'s get started.');
 } else {
-  alert('Sorry, you\'re stuck with me ;)');
+  alert('Sorry, you\'re stuck with me');
 }
 
 var answerTwo = prompt('Do I strike you as a PNW original?').toLowerCase();
@@ -51,7 +42,8 @@ var answerFour = prompt('Maybe Texas... Do you think I\'m from Texas?').toLowerC
 
 if (answerFour === 'yes' || answerFour === 'y') {
   //console.log('Really, ' + userName + '? I am not from Texas.');
-  alert('Really, ' + userName + '? I am not from Texas.');
+  //alert('Really, ' + userName + '? I am not from Texas.');
+  alert(`Really ${userName}? I am not from Texas.`);
 } else {
   alert('Not from Texas.');
 }
