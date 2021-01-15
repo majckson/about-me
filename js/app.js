@@ -12,7 +12,7 @@ var banana = 42;
 
 //get user name and offer greeting
 var userName = prompt('Hello, what\'s your name?');
-alert('Hello ' + userName + ', nice to meet you!');
+alert('Hi ' + userName + ', nice to meet you!');
 console.log(userName);
 
 // 5 question. they MUSt accept yes or no OR y or n IN ANY CASE
@@ -52,6 +52,14 @@ if (answerFour === 'yes' || answerFour === 'y') {
   alert('Really, ' + userName + '? I am not from Texas.');
 } else {
   alert('Not from Texas.');
+}
+
+var answerFive = prompt('How do you feel about the Midwest? Would you guess that I\'m from Chicago?');
+
+if (answerFive === 'yes' || answerFive === "y") {
+  alert('Close ' + userName + '! But I\'m not from Chicago');
+} else{
+  alert('You\'re, ' + userName + '. Not Chicago.');
 }
 
 //first examples used;
