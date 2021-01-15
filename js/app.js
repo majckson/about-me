@@ -12,29 +12,54 @@ var banana = 42;
 
 //get user name and offer greeting
 var userName = prompt('Hello, what\'s your name?');
-alert('Hello ' + userName + ', nice to meet you');
-console.log(userName)
+alert('Hello ' + userName + ', nice to meet you!');
+console.log(userName);
 
 // 5 question. they MUSt accept yes or no OR y or n IN ANY CASE
 // examples;  YES, yes, YEs, yeS, Y ,y....
 
-var responseOne = prompt('Do you think that I live in Seattle?').toLowerCase();
+var answerOne = prompt('Let\'s play a game to see if you can guess where I\'m from. Would you like to play?').toLocaleLowerCase();
+
+if (answerOne === 'yes' || answerOne === 'y') {
+  //console.log('correct');
+  alert('Perfect! Let\'s get started.');
+} else {
+  alert('Sorry, you\'re stuck with me ;)');
+}
+
+var answerTwo = prompt('Do I strike you as a PNW original?').toLowerCase();
 // or responseOne = responseOne.toLowerCase();
 // or var normalizedQuestionOne = questionOne.toLowerCase();
 
-if(responseOne === 'yes' || responseOne === 'y' ) {
+if (answerTwo === 'yes' || answerTwo === 'y') {
   //console.log('correct');
-  alert('Correct');
+  alert('Nope, not quite!');
 } else {
-  alert('wrong-o');
-// eslint-disable-next-line no-extra-semi
+  alert('Correct! I am not from here originally.');
 }
 
-var responseTwo = prompt('Do you think that I\'m from Seattle?').toLowerCase();
+var answerThree = prompt('How about the North East? Do I give you those Cape Cod vibes?');
 
-if(responseTwo === 'no' || responseTwo === 'no') {
-  //console.log('Definitely not from Seattle');
-  alert('Definitely not from Seattle');
+if (answerThree === 'yes' || answerThree === 'y') {
+  alert('Nope, not there either.');
 } else {
-  alert('Do I really come across as that anti-social?');
+  alert('You\'re right, I\'m not from there either.');
 }
+
+var answerFour = prompt('Maybe Texas... Do you think I\'m from Texas?');
+
+if (answerFour === 'yes' || answerFour === 'y') {
+  alert('Really, ' + userName + '? I am not from Texas.');
+} else {
+  alert('Not from Texas.');
+}
+
+//first examples used;
+// var responseTwo = prompt('Do you think that I\'m from Seattle?').toLowerCase();
+
+// if(responseTwo === 'no' || responseTwo === 'no') {
+//   //console.log('Definitely not from Seattle');
+//   alert('Definitely not from Seattle');
+// } else {
+//   alert('Do I really come across as that anti-social?');
+// }
