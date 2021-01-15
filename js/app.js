@@ -21,7 +21,7 @@ console.log(userName);
 var answerOne = prompt('Let\'s play a game to see if you can guess where I\'m from. Would you like to play?').toLocaleLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
-  //console.log('correct');
+  //console.log('Perfect! Let\'s get started.');
   alert('Perfect! Let\'s get started.');
 } else {
   alert('Sorry, you\'re stuck with me ;)');
@@ -38,7 +38,7 @@ if (answerTwo === 'yes' || answerTwo === 'y') {
   alert('Correct! I am not from here originally.');
 }
 
-var answerThree = prompt('How about the North East? Do I give you those Cape Cod vibes?');
+var answerThree = prompt('How about the North East? Do I give you those Cape Cod vibes?').toLocaleLowerCase();
 
 if (answerThree === 'yes' || answerThree === 'y') {
   alert('Nope, not there either.');
@@ -46,7 +46,7 @@ if (answerThree === 'yes' || answerThree === 'y') {
   alert('You\'re right, I\'m not from there either.');
 }
 
-var answerFour = prompt('Maybe Texas... Do you think I\'m from Texas?');
+var answerFour = prompt('Maybe Texas... Do you think I\'m from Texas?').toLocaleLowerCase();
 
 if (answerFour === 'yes' || answerFour === 'y') {
   alert('Really, ' + userName + '? I am not from Texas.');
@@ -54,9 +54,9 @@ if (answerFour === 'yes' || answerFour === 'y') {
   alert('Not from Texas.');
 }
 
-var answerFive = prompt('How do you feel about the Midwest? Would you guess that I\'m from Chicago?');
+var answerFive = prompt('How do you feel about the Midwest? Would you guess that I\'m from Chicago?').toLocaleLowerCase();
 
-if (answerFive === 'yes' || answerFive === "y") {
+if (answerFive === 'yes' || answerFive === 'y') {
   alert('Close ' + userName + '! But I\'m not from Chicago');
 } else{
   alert('You\'re, ' + userName + '. Not Chicago.');
