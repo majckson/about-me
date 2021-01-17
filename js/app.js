@@ -65,7 +65,7 @@ for (var i = 0; i < numberOfGuesses; i++) {
   var usersGuess = parseInt(prompt('Can you guess how many states I\'ve lived in?'));
   console.log(usersGuess);
   if (usersGuess === correctNumber) {
-    alert('You\re a genius!');
+    alert('You\'re a genius!');
     break;
   }
   if (usersGuess < correctNumber && i !== 4) {
