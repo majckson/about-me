@@ -80,12 +80,4 @@ for (var i = 0; i < numberOfGuesses; i++) {
 }
 
 //guessing game - 6 guesses, more than one answer to choose from
-var 
 
-// // var answerSix = prompt('Do you know how to log?').toLowerCase();
-
-// // if (answerSix === 'yes' || answerSix === 'y') {
-// //   console.log(answerSix);
-// // } else {
-// //   console.log('well that is a bummer');
-// // }
