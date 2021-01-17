@@ -72,12 +72,11 @@ for (var i = 0; i < numberOfGuesses; i++) {
     alert('Too low, I\'ve lived some life.');
   }
   else if (usersGuess > correctNumber && i !== 4) {
-    alert('No...I have not lived that much life')
+    alert('No...I have not lived that much life');
   } else {
-    alert(`Sorry, the correct answer ${correctNumber}`)
+    alert(`Sorry, the correct answer ${correctNumber}`);
   }
   console.log(i);
 }
 
-//guessing game - 6 guesses, more than one answer to choose from
-
+//guessing game - 6 guesses, more than one answer to choose from;
