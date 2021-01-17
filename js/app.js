@@ -54,7 +54,7 @@ if (answerFive === 'yes' || answerFive === 'y') {
   //console.log('Close ' + userName + '! But I\'m not from Chicago');
   alert('Close ' + userName + '! But I\'m not from Chicago');
 } else {
-  alert('You\'re, ' + userName + '. Not Chicago.');
+  alert('You\'re, right ' + userName + '. Not Chicago.');
 }
 
 //guessing game - 4 guesses
