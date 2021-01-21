@@ -69,7 +69,7 @@ var numberOfGuesses = 4;
 var correctNumber = 4;
 
 for (var i = 0; i < numberOfGuesses; i++) {
-  var usersGuess = parseInt(prompt('Can you guess how many states I\'ve lived in?'));
+  var usersGuess = +prompt('Can you guess how many states I\'ve lived in?');
   console.log(usersGuess);
   if (usersGuess === correctNumber) {
     correctAnswersTotal++;
