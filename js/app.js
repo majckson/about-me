@@ -1,13 +1,10 @@
 'use strict';
 
-//get user name and offer greeting
+
 let userName = prompt('Hello, what\'s your name?');
-//alert('Hi ' + userName + ', nice to meet you!');
 alert(`Hi ${userName}, nice to meet you`);
 //console.log(userName);
 
-// // 5 question. they MUSt accept yes or no OR y or n IN ANY CASE
-// // examples;  YES, yes, YEs, yeS, Y ,y....
 
 let correctAnswersTotal = 0;
 function answerOne() {
@@ -24,8 +21,6 @@ function answerOne() {
 
 function answerTwo() {
   let answerTwo = prompt('Do I strike you as a PNW original?').toLowerCase();
-  // or responseOne = responseOne.toLowerCase();
-  // or let normalizedQuestionOne = questionOne.toLowerCase();
 
   if (answerTwo === 'yes' || answerTwo === 'y') {
     //console.log('Nope, not quite!');
@@ -53,7 +48,6 @@ function answerFour() {
 
   if (answerFour === 'yes' || answerFour === 'y') {
     //console.log('Really, ' + userName + '? I am not from Texas.');
-    //alert('Really, ' + userName + '? I am not from Texas.');
     alert(`Really ${userName}? I am not from Texas.`);
   } else {
     alert('Not from Texas.');
@@ -73,7 +67,6 @@ function answerFive() {
     alert('Still wrong');
   }
 }
-//guessing game - 4 guesses
 
 let numberOfGuesses = 4;
 
@@ -81,7 +74,7 @@ function answerSix() {
   let correctAnswer = 4;
   for (let i = 0; i < numberOfGuesses; i++) {
     let usersGuess = +prompt('Can you guess how many states I\'ve lived in?');
-    console.log(usersGuess);
+    // console.log(usersGuess);
     if (usersGuess === correctAnswer) {
       alert('You\'re a genius!');
       correctAnswersTotal++;
@@ -95,11 +88,10 @@ function answerSix() {
     } else {
       alert(`Sorry, the correct answer is ${correctAnswer}`);
     }
-    console.log(i);
+    // console.log(i);
   }
 }
 
-//guessing game - 6 guesses, more than one answer to choose from;
 function answerSeven() {
   let pupNames = ['Hazel', 'Izy', 'Gus', 'Goose'];
   let guessCount = 0;
